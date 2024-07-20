@@ -23,8 +23,8 @@ import BrandLogo from "./brand-logo"
 
 const socialMedia = {
   TWITTER: {
-    url: "https://twitter.com",
-    name: "Twitter",
+    url: "https://X.com",
+    name: "X",
     icon: <Twitter />,
   },
   INSTAGRAM: {
@@ -42,16 +42,7 @@ const socialMedia = {
     name: "YouTube",
     icon: <Youtube />,
   },
-  GITHUB: {
-    url: "https://github.com",
-    name: "GitHub",
-    icon: <GitHub />,
-  },
-  TWITCH: {
-    url: "https://twitch.tv",
-    name: "Twitch",
-    icon: <Twitch />,
-  },
+ 
 }
 
 const getSocialURL = ({ service, username }) => {
@@ -146,6 +137,22 @@ export default function Footer() {
           </FlexList>
           <Text variant="small">{copyright}</Text>
         </Flex>
+        <Space size={5} />
+        <Text variant="small">
+          FDA DISCLAIMER: The statements made regarding these products have not been evaluated by the Food and Drug Administration. The efficacy of these products has not been confirmed by FDA-approved research. These products are not intended to diagnose, treat, cure or prevent any disease. All information presented here is not meant as a substitute for or alternative to information from health care practitioners. Please consult your healthcare professional about potential interactions or other possible complications before using any product. The Federal Food, Drug, and Cosmetic Act require this notice.
+        </Text>
+        <Space size={3} />
+        <Text variant="small">Nootrias</Text>
+        <Text variant="small">©2024 by Nootrias</Text>
+        <Flex variant="start" responsive>
+          <NavLink to="/privacy-policy">Privacy Policy</NavLink>
+          <NavLink to="/terms-and-conditions">Terms and Conditions</NavLink>
+          <NavLink to="/refund-policy">Refund Policy</NavLink>
+          <NavLink to="/shipping-policy">Shipping Policy</NavLink>
+        </Flex>
+        <Space size={3} />
+        <Text variant="small">support@nootrias.com</Text>
+        <Text variant="small">802.444.1876</Text>
       </Container>
       <Space size={3} />
     </Box>
